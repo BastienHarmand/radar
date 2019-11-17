@@ -11,3 +11,11 @@ input3.txt | output3.txt
 
 ## Instructions
 The project was compiled with the **sbt** command-line (https://www.scala-sbt.org/)
+After running **sbt** in the project folder, you just have to **compile** and **run** :
+
+```shell
+cd radar
+sbt
+sbt:radar> compile
+sbt:radar> run
+
