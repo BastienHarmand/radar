@@ -13,9 +13,27 @@ input3.txt | output3.txt
 The project was compiled with the **sbt** command-line (https://www.scala-sbt.org/)
 After running **sbt** in the project folder, you just have to **compile** and **run** :
 
-```shell
+```
 cd radar
 sbt
 sbt:radar> compile
 sbt:radar> run
+```
 
+You will get the following results :
+
+```
+Violations list for ressources/input1.txt :
+ZBZJ42,275,101
+Solution successfully checked with file : ressources/output1.txt
+
+Violations list for ressources/input2.txt :
+Solution successfully checked with file : ressources/output2.txt
+
+Violations list for ressources/input3.txt :
+PAZD54,150,100
+PAZD54,250,102
+DJSS87,250,100
+Solution successfully checked with file : ressources/output3.txt
+
+```
