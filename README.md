@@ -10,7 +10,7 @@ input2.txt | output2.txt
 input3.txt | output3.txt
 
 ## Instructions
-The project was compiled with the **sbt** command-line (https://www.scala-sbt.org/)
+The project was compiled with the **sbt** command-line (https://www.scala-sbt.org/).
 After running **sbt** in the project folder, you just have to **compile** and **run** :
 
 ```
@@ -37,3 +37,12 @@ DJSS87,250,100
 Solution successfully checked with file : ressources/output3.txt
 
 ```
+
+
+## Programm Overview
+
+The code consist of two files : **RadarProcess.scala** and **RecordsReader.scala**.
+### RadarProcess.scala
+1
+### RecordsReader.scala
+2
