@@ -20,7 +20,7 @@ sbt:radar> compile
 sbt:radar> run
 ```
 
-You will get the following results :
+You will get the following result :
 
 ```
 Violations list for ressources/input1.txt :
@@ -43,6 +43,6 @@ Solution successfully checked with file : ressources/output3.txt
 
 The code consist of two files : **RadarProcess.scala** and **RecordsReader.scala**.
 ### RadarProcess.scala
-1
+It contains the hard-coded list of scenario to test, this could be improved by an external configuration file to avoid compilation for new scenario. Then high level instructions are called using the **RecordsReader** class to compute and check the speed offenses.   
 ### RecordsReader.scala
 2
