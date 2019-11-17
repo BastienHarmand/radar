@@ -38,11 +38,11 @@ Solution successfully checked with file : ressources/output3.txt
 
 ```
 
-
-## Programm Overview
+## Program Architecture
 
 The code consist of two files : **RadarProcess.scala** and **RecordsReader.scala**.
 ### RadarProcess.scala
-It contains the hard-coded list of scenario to test, this could be improved by an external configuration file to avoid compilation for new scenario. Then high level instructions are called using the **RecordsReader** class to compute and check the speed offenses.   
+This is the main program that contain the hard-coded list of scenario to test, this could be improved by an external configuration file to avoid compilation for new scenario. Then high level instructions are called using the **RecordsReader** class to compute and check the speed violations.   
 ### RecordsReader.scala
-2
+It contains the case class **Record**, used to store the milestone and the timestamp and the class **RecordsReader** that process the files, return the solution with the method **extractViolations** and check it with the method **checkViolations**.
+
