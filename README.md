@@ -10,4 +10,4 @@ input2.txt | output2.txt
 input3.txt | output3.txt
 
 ## Instructions
-The project was compiled with the *sbt* command-line (https://www.scala-sbt.org/)
+The project was compiled with the **sbt** command-line (https://www.scala-sbt.org/)
