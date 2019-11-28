@@ -21,7 +21,7 @@ class RecordsReader(val fileName: String){
     // Generating a Map of records indexed by car id :
     var carsRecords:Map[String,List[Record]] = Map();
     for(radarInfo <- lines.tail){
-        var cols = radarInfo.split(",");
+        val cols = radarInfo.split(",");
         var records = List[Record]();
         if(carsRecords.contains(cols(0))) records = carsRecords(cols(0));
         carsRecords += cols(0) -> (Record(cols(1).toInt,cols(2).toInt) :: records);
@@ -33,11 +33,11 @@ class RecordsReader(val fileName: String){
         println("Violations list for %s :".format(fileName))
         for ((car,records) <- carsRecords){
             for(List(prev,current) <- records.reverse.sliding(2)){
-                var deltaX = current.milestone-prev.milestone;
-                var deltaT = current.timestamp-prev.timestamp;
-                var speed = deltaX/(deltaT.toFloat/3600)
+                val deltaX = current.milestone-prev.milestone;
+                val deltaT = current.timestamp-prev.timestamp;
+                val speed = deltaX/(deltaT.toFloat/3600)
                 if(speed>maxSpeed){
-                    var v = "%s,%d,%d".format(car,current.milestone,math.ceil(speed).toInt);
+                    val v = "%s,%d,%d".format(car,current.milestone,math.ceil(speed).toInt);
                     violations = v::violations;
                     println(v);
                 }

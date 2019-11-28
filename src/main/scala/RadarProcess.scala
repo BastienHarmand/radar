@@ -13,8 +13,8 @@ object RadarProcess extends App {
     );
     
     for(List(input,output) <- files){
-        var records = new RecordsReader(input);
-        var violations = records.extractViolations();
+        val records = new RecordsReader(input);
+        val violations = records.extractViolations();
         records.checkViolations(violations,output);
         println();
     }
